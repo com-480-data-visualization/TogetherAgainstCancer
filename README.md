@@ -69,6 +69,8 @@ Those websites were our main inspiration.
 
 > - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
 
+We are in this case.
+
 ## Milestone 2 (26th April, 5pm)
 
 **10% of the final grade**
