@@ -47,6 +47,8 @@ Our website will not be intended for scientific organizations that need precise 
 > Pre-processing of the data set you chose
 > - Show some basic statistics and get insights about the data
 
+See the [notebook](./EDA_cleaned.ipynb).
+
 ### Related work
 
 
@@ -66,10 +68,6 @@ We thought about an interactive map thanks to geographical games such as https:/
 We also looked at how we could do it and this website comforted us in our decision : https://simplemaps.com/docs/interactive-list.
 This idea of an interactive map led to the idea of an interactive body. We then checked if some websites used this and we found this website : https://portal.gdc.cancer.gov/. 
 Those websites were our main inspiration.
-
-> - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
-
-We are in this case.
 
 ## Milestone 2 (26th April, 5pm)
 
