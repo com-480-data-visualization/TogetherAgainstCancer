@@ -73,6 +73,9 @@ Those websites were our main inspiration.
 
 **10% of the final grade**
 
+See [this](./milestone2.pdf) document.
+
+The technologies used for the website are Python Django for the backend and Next.Js for the frontend. To visualize the website, you need to start both the django and the next server.
 
 ## Milestone 3 (31st May, 5pm)
 
