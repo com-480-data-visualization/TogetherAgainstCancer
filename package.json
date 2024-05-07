@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "node-iframe": "^1.10.0",
+    "react-iframe": "^1.8.5"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.23.0"
+  }
+}
