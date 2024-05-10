@@ -92,7 +92,7 @@ export default function Page() {
       </div>
       */}
       <div className="menu-container" id="#data">
-        <h4 align="center">{currentCancer == null ? "Body" : currentCancer.type + " data"}</h4>
+        <h4 align="center">{currentCancer == null ? "Select a zone" : currentCancer.type + " data"}</h4>
         {currentCancer == null ?
         <Anatomy/>
         : 
