@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Outlet, Link } from "react-router-dom";
 import Menu from './menu.js';
 import Anatomy from './anatomy.js';
 

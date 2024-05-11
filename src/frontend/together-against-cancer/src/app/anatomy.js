@@ -28,7 +28,6 @@ function scaleRadius(event) {
 
 */
 
-import { useState, useEffect } from 'react';
 
 export default function Anatomy({cancers, setActive}) {
     return (
