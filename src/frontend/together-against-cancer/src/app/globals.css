@@ -10,15 +10,24 @@
 }
 
 .img-overlay-wrap {
+    max-width: 85%;
+    height: max-content;
+    margin: 50px auto;
+    position: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     position: relative;
-    display: inline-block; /* <= shrinks container to image size */
-    /*transition: transform 150ms ease-in-out;*/
+    text-align: center;
   }
   
-  .img-overlay-wrap img { /* <= optional, for responsiveness */
-     display: block;
-     width: 100%;
-     height: auto;
+  .img-overlay-wrap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   
   .img-overlay-wrap svg {
@@ -40,3 +49,15 @@
     transform: scale(1.5);
     fill: red;
   }
+
+  .hide {
+    display: none;
+  }
+
+  .img-overlay-wrap svg circle:hover + .hide {
+    display: block;
+    transition: stroke-opacity 1s, stroke-width 1s;
+    fill: red;
+    font-size: 5px;
+  }
+

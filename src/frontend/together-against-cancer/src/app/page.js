@@ -28,29 +28,32 @@ function Listing({ cancers, active, setActive }) {
 function Carousel({ currentCancer }) {
 
   return (
-    <div id="carouselGraphs" className="carousel carousel-fade slide">
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100"/>
+    <div className="menu-container row">
+      <h4 align="center">{currentCancer.type + " data"}</h4>
+      <div id="carouselGraphs" className="carousel carousel-fade slide">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100"/>
+          </div>
+          <div className="carousel-item">
+            <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100"/>
+          </div>
+          <div className="carousel-item">
+            <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100"/>
+          </div>
+          <div className="carousel-item">
+            <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100"/>
+          </div>
         </div>
-        <div className="carousel-item">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100"/>
-        </div>
-        <div className="carousel-item">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100"/>
-        </div>
-        <div className="carousel-item">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100"/>
-        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselGraphs" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselGraphs" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselGraphs" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselGraphs" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
     </div>
   );
 }
@@ -90,13 +93,20 @@ export default function Page() {
         </div>
       </div>
       */}
-      <div className="menu-container" id="#data">
+      {currentCancer == null ?
+        <Anatomy cancers={cancers} setActive={setCurrentCancer}/>
+        :
+        <Carousel currentCancer={currentCancer} />
+      }
+      {/*
+      <div className="menu-container row">
         <h4 align="center">{currentCancer == null ? "Select a zone" : currentCancer.type + " data"}</h4>
         {currentCancer == null ?
         <Anatomy/>
         : 
         <Carousel currentCancer={currentCancer} />}
       </div>
+      */}
     </body>
   );
 }
