@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function getCancers() {
 
@@ -34,20 +34,22 @@ function Listing({ cancers, active, setActive }) {
 
 function Carousel({ currentCancer }) {
 
+  const isProd = process.env.NODE_ENV === 'production';
+
   return (
     <div id="carouselGraphs" className="carousel carousel-fade slide">
       <div className="carousel-inner">
         <div className="carousel-item ">
-          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" />
+          <img src={isProd ? "/TogetherAgainstCancer" : "" + "/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" />
+          <img src={isProd ? "/TogetherAgainstCancer" : "" + "/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
+          <img src={isProd ? "/TogetherAgainstCancer" : "" + "/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
+          <img src={isProd ? "/TogetherAgainstCancer" : "" + "/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselGraphs" data-bs-slide="prev">
@@ -64,16 +66,8 @@ function Carousel({ currentCancer }) {
 
 export default function Page() {
 
-  const [cancers, setCancers] = useState(null);
+  const [cancers, setCancers] = useState(getCancers());
   const [currentCancer, setCurrentCancer] = useState(null);
-
-  useEffect(() => {
-    const fetchCancers = async () => {
-      const c = await getCancers();
-      setCancers(c);
-    }
-    fetchCancers().catch(console.error)
-  }, []);
 
   return (
     <div className="menu-container row">
