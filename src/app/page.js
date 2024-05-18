@@ -5,8 +5,16 @@ import { useEffect, useState } from "react";
 function getCancers() {
 
   const cancerList = [
-    {id: 1, type: "Breast"},
-    {id: 2, type: "Brain"},
+    {id: 1, type: "Brain"},
+    {id: 2, type: "Breast"},
+    {id: 3, type: "Colon"},
+    {id: 4, type: "Kidney"},
+    {id: 5, type: "Liver"},
+    {id: 6, type: "Ovarian"},
+    {id: 7, type: "Pancreas"},
+    {id: 8, type: "Stomach"},
+    {id: 9, type: "Trachea"},
+    {id: 10, type: "Thyroid"},
   ];
 
   return cancerList;
@@ -24,23 +32,22 @@ function Listing({ cancers, active, setActive }) {
   );
 }
 
-
 function Carousel({ currentCancer }) {
 
   return (
     <div id="carouselGraphs" className="carousel carousel-fade slide">
       <div className="carousel-inner">
         <div className="carousel-item ">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" />
+          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" />
+          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
+          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
         </div>
         <div className="carousel-item active">
-          <img src={"http://localhost:8000/media/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
+          <img src={"/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselGraphs" data-bs-slide="prev">
