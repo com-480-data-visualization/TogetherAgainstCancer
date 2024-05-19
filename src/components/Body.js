@@ -1,9 +1,12 @@
 import cancerData from "../data";
 
 export default function Body({active, setActive}) {
+
+    const isProd = process.env.NODE_ENV === 'production';
+
     return (
             <svg id="overlay-svg" viewBox='0 0 100 100'>
-                <image id="overlay-image" href="/body.jpeg" height="100" width="100" />
+                <image id="overlay-image" href={(isProd ? "/TogetherAgainstCancer" : "") + "/body.jpeg"} height="100" width="100" />
                 {
                 cancerData.cancers.map((c) => (
                 <svg key={c.id} viewBox='0 0 100 100'>
