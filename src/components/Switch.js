@@ -5,15 +5,14 @@ export default function Switch({state, stateSetter}) {
     }
 
     return (
-        <div class="form-check form-switch">
+        <div className="form-switch">
             <input
                 id="mode"
                 type="checkbox"
-                class="form-check-input"
+                className="form-check-input"
                 checked={state}
                 onChange={switchHandler}
             />
-            <label htmlFor="mode">Advanced mode</label>
         </div>
     );
 }

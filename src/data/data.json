@@ -1,0 +1,462 @@
+{
+    "cancers": [
+        {
+            "id": 1,
+            "type": "Brain",
+            "point_pos": [
+                70.5,
+                16
+            ],
+            "text_pos": [
+                75,
+                15
+            ]
+        },
+        {
+            "id": 2,
+            "type": "Breast",
+            "point_pos": [
+                31,
+                35
+            ],
+            "text_pos": [
+                36.5,
+                34
+            ]
+        },
+        {
+            "id": 3,
+            "type": "Colon",
+            "point_pos": [
+                70.5,
+                48
+            ],
+            "text_pos": [
+                78,
+                60
+            ]
+        },
+        {
+            "id": 4,
+            "type": "Kidney",
+            "point_pos": [
+                73,
+                43
+            ],
+            "text_pos": [
+                83,
+                39
+            ]
+        },
+        {
+            "id": 5,
+            "type": "Liver",
+            "point_pos": [
+                69,
+                39
+            ],
+            "text_pos": [
+                49,
+                37
+            ]
+        },
+        {
+            "id": 6,
+            "type": "Ovarian",
+            "point_pos": [
+                28,
+                49
+            ],
+            "text_pos": [
+                3,
+                46
+            ]
+        },
+        {
+            "id": 7,
+            "type": "Pancreas",
+            "point_pos": [
+                70,
+                42.5
+            ],
+            "text_pos": [
+                40,
+                41
+            ]
+        },
+        {
+            "id": 8,
+            "type": "Stomach",
+            "point_pos": [
+                72,
+                40
+            ],
+            "text_pos": [
+                83,
+                39
+            ]
+        },
+        {
+            "id": 9,
+            "type": "Trachea",
+            "point_pos": [
+                70.5,
+                27
+            ],
+            "text_pos": [
+                50,
+                25
+            ]
+        },
+        {
+            "id": 10,
+            "type": "Thyroid",
+            "point_pos": [
+                28.5,
+                29
+            ],
+            "text_pos": [
+                33,
+                27
+            ]
+        }
+    ],
+    "countryMeans": {
+        "DENMARK": {
+            "brain": {
+                "death_rate_men": 8.526235589129394,
+                "death_rate_women": 6.848056451915484
+            },
+            "breast": {
+                "death_rate_men": 0.33239494634879374,
+                "death_rate_women": 56.7232006440688
+            },
+            "colon": {
+                "death_rate_men": 41.22792352427787,
+                "death_rate_women": 42.51500763852013
+            },
+            "kidney": {
+                "death_rate_men": 7.120037822255703,
+                "death_rate_women": 4.816630661476525
+            },
+            "liver": {
+                "death_rate_men": 4.87944967596358,
+                "death_rate_women": 2.649699623500797
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 16.129721354644012
+            },
+            "pancreas": {
+                "death_rate_men": 15.172208788377615,
+                "death_rate_women": 16.69337708669705
+            },
+            "stomach": {
+                "death_rate_men": 14.21767687205364,
+                "death_rate_women": 9.979696339700805
+            },
+            "thyroid": {
+                "death_rate_men": 0.47021454819394687,
+                "death_rate_women": 0.8711093208907262
+            },
+            "trachea": {
+                "death_rate_men": 89.55992860179356,
+                "death_rate_women": 59.821216815428855
+            }
+        },
+        "FRANCE": {
+            "brain": {
+                "death_rate_men": 6.769290189013095,
+                "death_rate_women": 4.729081457498352
+            },
+            "breast": {
+                "death_rate_men": 0.6282964334383728,
+                "death_rate_women": 44.44202256113003
+            },
+            "colon": {
+                "death_rate_men": 38.72158083895421,
+                "death_rate_women": 34.708998884796266
+            },
+            "kidney": {
+                "death_rate_men": 8.316301747718432,
+                "death_rate_women": 4.303256167689031
+            },
+            "liver": {
+                "death_rate_men": 14.208969566954888,
+                "death_rate_women": 4.737678565730858
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 12.647737446895059
+            },
+            "pancreas": {
+                "death_rate_men": 15.577675164073312,
+                "death_rate_women": 14.30154422290005
+            },
+            "stomach": {
+                "death_rate_men": 16.98724248441552,
+                "death_rate_women": 11.112320964024272
+            },
+            "thyroid": {
+                "death_rate_men": 0.7945460885860663,
+                "death_rate_women": 1.1121582265931942
+            },
+            "trachea": {
+                "death_rate_men": 83.99466266772865,
+                "death_rate_women": 20.671335041129925
+            }
+        },
+        "GERMANY": {
+            "brain": {
+                "death_rate_men": 7.500512994446093,
+                "death_rate_women": 6.066758225237651
+            },
+            "breast": {
+                "death_rate_men": 0.3891174343907795,
+                "death_rate_women": 48.54464523633375
+            },
+            "colon": {
+                "death_rate_men": 38.72252480241867,
+                "death_rate_women": 41.8215547705607
+            },
+            "kidney": {
+                "death_rate_men": 9.571547678934436,
+                "death_rate_women": 5.896236365072856
+            },
+            "liver": {
+                "death_rate_men": 8.434955529823753,
+                "death_rate_women": 4.667509199770727
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 11.676762669938707
+            },
+            "pancreas": {
+                "death_rate_men": 17.585220995036316,
+                "death_rate_women": 18.745387666951377
+            },
+            "stomach": {
+                "death_rate_men": 21.56116796415274,
+                "death_rate_women": 18.487021682337424
+            },
+            "thyroid": {
+                "death_rate_men": 0.8759581882061259,
+                "death_rate_women": 1.4969470485605147
+            },
+            "trachea": {
+                "death_rate_men": 81.77914108337856,
+                "death_rate_women": 29.56025748991553
+            }
+        },
+        "ITALY": {
+            "brain": {
+                "death_rate_men": 7.569519026921244,
+                "death_rate_women": 5.720159364310526
+            },
+            "breast": {
+                "death_rate_men": 0.36484980129898215,
+                "death_rate_women": 44.61601937980872
+            },
+            "colon": {
+                "death_rate_men": 37.889695673521985,
+                "death_rate_women": 32.07520498026036
+            },
+            "kidney": {
+                "death_rate_men": 8.451737545876185,
+                "death_rate_women": 4.353899744813644
+            },
+            "liver": {
+                "death_rate_men": 13.636983337834439,
+                "death_rate_women": 6.699096335070684
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 11.676762669938707
+            },
+            "pancreas": {
+                "death_rate_men": 17.943688059390176,
+                "death_rate_women": 17.71890006665069
+            },
+            "stomach": {
+                "death_rate_men": 30.762392721853356,
+                "death_rate_women": 21.95763789554833
+            },
+            "thyroid": {
+                "death_rate_men": 0.8894850360718966,
+                "death_rate_women": 1.3659504989312332
+            },
+            "trachea": {
+                "death_rate_men": 95.2443872315907,
+                "death_rate_women": 24.669275597402713
+            }
+        },
+        "NORWAY": {
+            "brain": {
+                "death_rate_men": 8.13853319445986,
+                "death_rate_women": 6.228445329169419
+            },
+            "breast": {
+                "death_rate_men": 0.2497829750906315,
+                "death_rate_women": 34.99324541428654
+            },
+            "colon": {
+                "death_rate_men": 37.78657390286002,
+                "death_rate_women": 39.06832970923786
+            },
+            "kidney": {
+                "death_rate_men": 8.05260666122523,
+                "death_rate_women": 5.042930213561776
+            },
+            "liver": {
+                "death_rate_men": 3.738747862203124,
+                "death_rate_women": 2.884205636325589
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 14.84996393328338
+            },
+            "pancreas": {
+                "death_rate_men": 15.093969629676845,
+                "death_rate_women": 15.722406812636274
+            },
+            "stomach": {
+                "death_rate_men": 16.034902683627738,
+                "death_rate_women": 11.778091843585157
+            },
+            "thyroid": {
+                "death_rate_men": 0.6472404091240376,
+                "death_rate_women": 1.1704979561907867
+            },
+            "trachea": {
+                "death_rate_men": 53.12669284419864,
+                "death_rate_women": 30.539066144249535
+            }
+        },
+        "SPAIN": {
+            "brain": {
+                "death_rate_men": 7.1654770273147035,
+                "death_rate_women": 5.427349374871377
+            },
+            "breast": {
+                "death_rate_men": 0.33199525316885314,
+                "death_rate_women": 31.492432312627663
+            },
+            "colon": {
+                "death_rate_men": 36.799532560033356,
+                "death_rate_women": 28.925793482053695
+            },
+            "kidney": {
+                "death_rate_men": 5.780271977003436,
+                "death_rate_women": 2.9156743357378723
+            },
+            "liver": {
+                "death_rate_men": 11.34419157361826,
+                "death_rate_women": 5.9069187442502615
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 8.702795189224195
+            },
+            "pancreas": {
+                "death_rate_men": 12.61318900076869,
+                "death_rate_women": 11.560239288078227
+            },
+            "stomach": {
+                "death_rate_men": 22.91492901515521,
+                "death_rate_women": 15.318424583526191
+            },
+            "thyroid": {
+                "death_rate_men": 0.6222559731168494,
+                "death_rate_women": 0.9329124736549439
+            },
+            "trachea": {
+                "death_rate_men": 79.82183830682091,
+                "death_rate_women": 13.619242838636437
+            }
+        },
+        "SWITZERLAND": {
+            "brain": {
+                "death_rate_men": 5.7310907880352815,
+                "death_rate_women": 3.987650343244721
+            },
+            "breast": {
+                "death_rate_men": 0.2267992771270774,
+                "death_rate_women": 40.1669853562383
+            },
+            "colon": {
+                "death_rate_men": 25.645553730349384,
+                "death_rate_women": 23.393094443512044
+            },
+            "kidney": {
+                "death_rate_men": 4.425385484784342,
+                "death_rate_women": 2.5498449260293956
+            },
+            "liver": {
+                "death_rate_men": 10.167660375728351,
+                "death_rate_women": 3.716036854560425
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 9.785071285755592
+            },
+            "pancreas": {
+                "death_rate_men": 12.123985612114739,
+                "death_rate_women": 13.253397934723
+            },
+            "stomach": {
+                "death_rate_men": 15.804289543799,
+                "death_rate_women": 11.217030521079515
+            },
+            "thyroid": {
+                "death_rate_men": 0.6251703934516795,
+                "death_rate_women": 1.0917472532695691
+            },
+            "trachea": {
+                "death_rate_men": 59.327520436605504,
+                "death_rate_women": 25.606113134651093
+            }
+        },
+        "UK": {
+            "brain": {
+                "death_rate_men": 7.436166760567555,
+                "death_rate_women": 5.297584005179885
+            },
+            "breast": {
+                "death_rate_men": 0.30458861200747817,
+                "death_rate_women": 50.8272590633685
+            },
+            "colon": {
+                "death_rate_men": 36.2590223582528,
+                "death_rate_women": 34.73928405421647
+            },
+            "kidney": {
+                "death_rate_men": 7.546100427578486,
+                "death_rate_women": 4.748387661244473
+            },
+            "liver": {
+                "death_rate_men": 6.01525694380284,
+                "death_rate_women": 4.26062802412215
+            },
+            "ovarian": {
+                "death_rate_men": null,
+                "death_rate_women": 16.322628792264464
+            },
+            "pancreas": {
+                "death_rate_men": 14.500499856018228,
+                "death_rate_women": 15.484237531529553
+            },
+            "stomach": {
+                "death_rate_men": 18.727697108254844,
+                "death_rate_women": 12.753935131405322
+            },
+            "thyroid": {
+                "death_rate_men": 0.547137346961067,
+                "death_rate_women": 0.9037767973589781
+            },
+            "trachea": {
+                "death_rate_men": 85.56739873471204,
+                "death_rate_women": 49.85086889634743
+            }
+        }
+    } 
+}

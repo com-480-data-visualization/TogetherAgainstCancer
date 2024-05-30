@@ -1,4 +1,4 @@
-import cancerData from "../data";
+import cancerData from "../data/data.json";
 
 export default function Body({active, setActive}) {
 

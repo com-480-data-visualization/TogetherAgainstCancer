@@ -1,31 +1,31 @@
+import { useState } from "react";
+
 export default function Carousel({ currentCancer }) {
 
   const isProd = process.env.NODE_ENV === 'production';
 
+  const [activeImage, setActiveImage] = useState(0);
+
   return (
-    <div id="carouselGraphs" className="carousel carousel-fade slide">
-      <div className="carousel-inner">
-        <div className="carousel-item ">
-          <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" />
+    <div>
+      {activeImage === 0 ? <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="d-block w-100" /> : null }
+      {activeImage === 1 ? <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" /> : null }
+      {activeImage === 2 ? <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" /> : null }
+      {activeImage === 3 ? <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" /> : null }
+      <div className="row m-2 p-1">
+        <div className={"p-1 col" + (activeImage === 0 ? " text-bg-primary" : "")}>
+          <img onClick={() => setActiveImage(0)} src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/daly.png"} className="rounded mx-auto d-block w-100" />
         </div>
-        <div className="carousel-item active">
-          <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="d-block w-100" />
+        <div className={"p-1 col" + (activeImage === 1 ? " text-bg-primary" : "")}>
+          <img onClick={() => setActiveImage(1)} src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/hbar.png"} className="rounded mx-auto d-block w-100" />
         </div>
-        <div className="carousel-item active">
-          <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
+        <div className={"p-1 col" + (activeImage === 2 ? " text-bg-primary" : "")}>
+          <img onClick={() => setActiveImage(2)} src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/time_series.png"} className="d-block w-100" />
         </div>
-        <div className="carousel-item active">
-          <img src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
+        <div className={"p-1 col" + (activeImage === 3 ? " text-bg-primary" : "")}>
+          <img onClick={() => setActiveImage(3)} src={(isProd ? "/TogetherAgainstCancer" : "") + "/graphs/" + (currentCancer.type).toLowerCase() + "/vbar.png"} className="d-block w-100" />
         </div>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselGraphs" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselGraphs" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
+    </div >
   );
 }
