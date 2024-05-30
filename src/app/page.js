@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { updateCountryInfo } from "../utils.js";
+import dynamic from 'next/dynamic';
 
 import Body from "../components/Body.js";
 import Switch from "../components/Switch.js";
 import Carousel from "../components/Carousel.js";
-import Map from "../components/Map.js";
+const Map = dynamic(() => import('../components/Map.js'), {
+  ssr: false,
+});
 import Modal from "../components/Modal.js";
 
 
