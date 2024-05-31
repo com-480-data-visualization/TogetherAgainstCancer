@@ -66,6 +66,8 @@ export default function Page() {
   // The current cancer that is displayed
   const [currentCancer, setCurrentCancer] = useState(null);
 
+  const isProd = process.env.NODE_ENV === 'production';
+
   return (
     <>
       <div className="homepage-container" >
@@ -79,7 +81,7 @@ export default function Page() {
       </div>
       <h1 className="page-title">Static Visualizations</h1>
       <div className="staticpage-container" >
-        <img className="staticpage-img" src="/wordcloud.png" alt="" height="500" width="900" />
+        <img className="staticpage-img" src={(isProd ? "/TogetherAgainstCancer" : "") + "/wordcloud.png"} alt="" height="500" width="900" />
         <div className="container-sm" width="5">
         <p className="staticpage-text" style={{fontFamily: "Cinzel Decorative"}}>This wordcloud gives an insight on the proportion of each type of cancer. The bigger the name of the cancer, the most frequent it is. We highly recommand (as none experts) a cancer screening for the most frequent cancers as it can sometimes be too late when it is detected without the screening.</p>
         </div>
