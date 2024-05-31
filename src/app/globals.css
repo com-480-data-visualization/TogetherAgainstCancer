@@ -1,12 +1,38 @@
-.menu-container {
-    max-width: 85%;
-    height: max-content;
+.homepage-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/background.png');
+    background-color: #dac4bd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.page-title {
+    font-family: "Cinzel Decorative";
+    padding: 20px;
+    margin: 5px 25px;
+}
+
+.interactpage-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactions-container {
+    width: 50%;
+    max-height: 100vh;
     margin: 50px auto;
     position: center;
     padding: 20px;
-    background: #f9f9f9;
+    background: #dac4bd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-row: 1;
 }
 
 .switch-container {
@@ -17,6 +43,35 @@
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(51, 50, 50, 0.1);
+}
+
+.image-container {
+    max-width: 70%;
+    max-height: 100vh;
+    margin: 0px auto;
+    position: center;
+    background: #f9f9f9;
+}
+
+.staticpage-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.staticpage-img {
+    align-self: center;
+    margin: auto auto;
+    grid-row: 0;
+}
+
+.staticpage-text {
+    align-self: center;
+    max-width: 100ch;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: text-bottom;
 }
 

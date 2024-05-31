@@ -14,18 +14,18 @@ import Modal from "../components/Modal.js";
 
 
 // Part to select the data to represent
-function DataSelect({active, setActive}) {
-  return(
-      <div className="col text-center" >
-        <h4>Type of Cancer</h4>
-        <p>Select a type of cancer to learn about its statistics :</p>
-        <Body active={active} setActive={setActive} />
-      </div>
+function DataSelect({ active, setActive }) {
+  return (
+    <div className="col text-center" >
+      <h4 style={{fontFamily: "Cinzel Decorative"}}>Type of Cancer</h4>
+      <p style={{fontFamily: "Cinzel Decorative"}}>Select a type of cancer to learn about its statistics :</p>
+      <Body active={active} setActive={setActive} />
+    </div>
   );
 }
 
 // Part to represent the data chosen
-function DataRepr({active}) {
+function DataRepr({ active }) {
 
   // Mode of representation (false: Graphs, true: Map)
   const [mode, setMode] = useState(false);
@@ -40,25 +40,25 @@ function DataRepr({active}) {
   }, [active]);
 
   return (
-        <div className="col text-center" style={{ "borderLeft": "1px solid #ddd" }}>
-          <Modal countryInfo={countryInfo} />
-          <h4>Statistics {active == null ? "" : "on " + (active.type).toLowerCase() + " cancer"}</h4>
-          <div className="switch-container text-center">
-            <div className="row align-items-center">
-              <div className="col">
-                Graphs
-              </div>
-              <div className="col">
-                <Switch state={mode} stateSetter={setMode} />
-              </div>
-              <div className="col">
-                Map
-              </div>
-            </div>
+    <div className="col text-center" style={{ "borderLeft": "1px solid #ddd" }}>
+      <Modal countryInfo={countryInfo} />
+      <h4 style={{fontFamily: "Cinzel Decorative"}}>Statistics {active == null ? "" : "on " + (active.type).toLowerCase() + " cancer"}</h4>
+      <div className="switch-container text-center">
+        <div className="row align-items-center">
+          <div className="col" style={{fontFamily: "Cinzel Decorative"}}>
+            Graphs
           </div>
-          {mode ? <Map setCountryInfo={setCountryInfo} currentCancer={active} /> : <Carousel currentCancer={active} />}
+          <div className="col">
+            <Switch state={mode} stateSetter={setMode} />
+          </div>
+          <div className="col" style={{fontFamily: "Cinzel Decorative"}}>
+            Map
+          </div>
         </div>
-    );
+      </div>
+      {mode ? <Map setCountryInfo={setCountryInfo} currentCancer={active} /> : <Carousel currentCancer={active} />}
+    </div>
+  );
 }
 
 export default function Page() {
@@ -68,19 +68,22 @@ export default function Page() {
 
   return (
     <>
-
-    <nav className="navbar bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="">
-          TogetherAgainstCancer
-        </a>
+      <div className="homepage-container" >
       </div>
-    </nav>
-
-    <div className="menu-container row">
-      <DataSelect active={currentCancer} setActive={setCurrentCancer} />
-      {currentCancer === null ? null : <DataRepr active={currentCancer} /> }
-    </div>
+      <h1 className="page-title">Interactive Visualizations</h1>
+      <div className="interactpage-container">
+        <div className="interactions-container row">
+          <DataSelect active={currentCancer} setActive={setCurrentCancer} />
+          {currentCancer === null ? null : <DataRepr active={currentCancer} />}
+        </div>
+      </div>
+      <h1 className="page-title">Static Visualizations</h1>
+      <div className="staticpage-container" >
+        <img className="staticpage-img" src="/wordcloud.png" alt="" height="500" width="900" />
+        <div className="container-sm" width="5">
+        <p className="staticpage-text" style={{fontFamily: "Cinzel Decorative"}}>This wordcloud gives an insight on the proportion of each type of cancer. The bigger the name of the cancer, the most frequent it is. We highly recommand (as none experts) a cancer screening for the most frequent cancers as it can sometimes be too late when it is detected without the screening.</p>
+        </div>
+      </div>
 
     </>
   );
