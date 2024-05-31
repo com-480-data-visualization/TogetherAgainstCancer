@@ -72,14 +72,14 @@ export default function Page() {
     <>
       <div className="homepage-container" >
       </div>
-      <h1 className="page-title">Interactive Visualizations</h1>
+      <h1 className="page-title">Interactives Visualizations</h1>
       <div className="interactpage-container">
         <div className="interactions-container row">
           <DataSelect active={currentCancer} setActive={setCurrentCancer} />
           {currentCancer === null ? null : <DataRepr active={currentCancer} />}
         </div>
       </div>
-      <h1 className="page-title">Static Visualizations</h1>
+      <h1 className="page-title">Statics Visualizations</h1>
       <div className="staticpage-container" >
         <img className="staticpage-img" src={(isProd ? "/TogetherAgainstCancer" : "") + "/wordcloud.png"} alt="" height="500" width="900" />
         <div className="container-sm" width="5">
