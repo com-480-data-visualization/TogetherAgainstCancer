@@ -87,6 +87,15 @@ Then, you can connect to `localhost:3000` to access the website.
 
 **80% of the final grade**
 
+Report : see [this](./milestone3.pdf) document.
+
+Website : follow this [link](https://com-480-data-visualization.github.io/TogetherAgainstCancer/).
+
+Please find the code and utilities for the website in the `public`branch. 
+
+In the main branch you will find notebooks for exploratory data analysis and graphs generation. You will also find the dataset we used and a codebook explaining the metrics and measures it contains.
+
+
 
 ## Late policy
 
