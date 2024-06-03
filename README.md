@@ -75,7 +75,7 @@ Those websites were our main inspiration.
 
 See [this](./milestone2.pdf) document.
 
-The technology used for the website is Next.js. The website is published on github pages. You access it with this url : [link](https://com-480-data-visualization.github.io/TogetherAgainstCancer/)
+The technology used for the website is Next.js. The website is published on github pages. You access it with this [url](https://com-480-data-visualization.github.io/TogetherAgainstCancer/).
 
 ## Milestone 3 (31st May, 5pm)
 
