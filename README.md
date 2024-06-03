@@ -75,13 +75,7 @@ Those websites were our main inspiration.
 
 See [this](./milestone2.pdf) document.
 
-The technologies used for the website are Python Django for the backend and Next.Js for the frontend. To visualize the website, you need to start both the django and the next server.
-
-To run the django server, go to ROOT_OF_PROJECT/src/backend/ and execute the command `python3 manage.py runserver`.
-
-To run the next server, you need npm. Go to ROOT_OF_PROJECT/src/frontend/together-against-cancer/ and execute the command `sudo npm run build` and then `sudo npm run dev`.
-
-Then, you can connect to `localhost:3000` to access the website.
+The technology used for the website is Next.js. The website is published on github pages. You access it with this url : [link](https://com-480-data-visualization.github.io/TogetherAgainstCancer/)
 
 ## Milestone 3 (31st May, 5pm)
 
